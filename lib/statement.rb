@@ -1,9 +1,8 @@
 class Statement
-
-attr_reader :headings
+  attr_reader :headings
 
   def initialize
-    @headings = ['date', 'credit', 'debit', 'balance']
+    @headings = %w[date credit debit balance]
   end
 
   def print
@@ -11,7 +10,6 @@ attr_reader :headings
   end
 
   def headers
-    headings.join " " + "||" + " "
+    headings.join ' ' + '||' + ' '
   end
-
 end
