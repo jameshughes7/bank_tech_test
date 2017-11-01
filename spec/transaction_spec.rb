@@ -21,5 +21,4 @@ describe Transaction do
     account = Account.new
     expect{ transaction.withdrawal(100, account) }.to change { account.show_balance }.by(-100)
   end
-
 end
