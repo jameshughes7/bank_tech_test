@@ -10,5 +10,7 @@ class Transaction
     account.credit(amount)
   end
 
-
+  def withdrawal(amount,account)
+    account.debit(amount)
+  end
 end

@@ -15,4 +15,11 @@ describe Transaction do
     expect{ transaction.deposit(100, account) }.to change { account.show_balance }.by(100)
   end
 
+  it 'should make a withdrawal' do
+    transaction = Transaction.new
+    expect(transaction).to respond_to(:withdrawal).with(2).arguments
+    account = Account.new
+    expect{ transaction.withdrawal(100, account) }.to change { account.show_balance }.by(-100)
+  end
+
 end
