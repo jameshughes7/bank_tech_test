@@ -14,26 +14,26 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2017-10-30T16:50:36+00:00">2017-10-30T16:50:36+00:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2017-11-01T10:49:54+00:00">2017-11-01T10:49:54+00:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="green">98.18%</span></span>
+    (<span class="covered_percent"><span class="green">98.44%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.1
+         1.22
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>6</b> files in total.
-    <b>55</b> relevant lines. 
-    <span class="green"><b>54</b> lines covered</span> and
+    <b>64</b> relevant lines. 
+    <span class="green"><b>63</b> lines covered</span> and
     <span class="red"><b>1</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -57,7 +57,7 @@
         <td>11</td>
         <td>11</td>
         <td>0</td>
-        <td>1.5</td>
+        <td>1.9</td>
       </tr>
       
       <tr>
@@ -73,11 +73,11 @@
       <tr>
         <td class="strong"><a href="#69adc2c22b587a4342ecf5b4a07459a64441c134" class="src_link" title="lib/transaction.rb">lib/transaction.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>8</td>
-        <td>3</td>
-        <td>3</td>
+        <td>14</td>
+        <td>6</td>
+        <td>6</td>
         <td>0</td>
-        <td>1.0</td>
+        <td>1.2</td>
       </tr>
       
       <tr>
@@ -103,11 +103,11 @@
       <tr>
         <td class="strong"><a href="#b829319d264a9af573d22be7205a8033c37a5b53" class="src_link" title="spec/transaction_spec.rb">spec/transaction_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>8</td>
-        <td>5</td>
-        <td>5</td>
+        <td>17</td>
+        <td>11</td>
+        <td>11</td>
         <td>0</td>
-        <td>1.0</td>
+        <td>1.3</td>
       </tr>
       
     </tbody>
@@ -152,8 +152,8 @@
           <code class="ruby">  def initialize</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="3">
-          <span class="hits">4</span>
+        <li class="covered" data-hits="5" data-linenumber="3">
+          <span class="hits">5</span>
           
           <code class="ruby">    @balance = 0</code>
         </li>
@@ -176,8 +176,8 @@
           <code class="ruby">  def show_balance</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="7">
-          <span class="hits">3</span>
+        <li class="covered" data-hits="5" data-linenumber="7">
+          <span class="hits">5</span>
           
           <code class="ruby">    @balance</code>
         </li>
@@ -200,14 +200,14 @@
           <code class="ruby">  def credit(amount)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="11">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="11">
+          <span class="hits">2</span>
           
           <code class="ruby">    @balance += amount</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="12">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="12">
+          <span class="hits">2</span>
           
           <code class="ruby">    @balance</code>
         </li>
@@ -373,8 +373,8 @@
     <h3>lib/transaction.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>3</b> relevant lines. 
-      <span class="green"><b>3</b> lines covered</span> and
+      <b>6</b> relevant lines. 
+      <span class="green"><b>6</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -385,7 +385,7 @@
         <li class="covered" data-hits="1" data-linenumber="1">
           <span class="hits">1</span>
           
-          <code class="ruby">class Transaction</code>
+          <code class="ruby">require_relative &#39;account&#39;</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="2">
@@ -397,34 +397,70 @@
         <li class="covered" data-hits="1" data-linenumber="3">
           <span class="hits">1</span>
           
-          <code class="ruby">  def initialize</code>
+          <code class="ruby">class Transaction</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="4">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    @transactions = []</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="5">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="6">
+        <li class="never" data-hits="" data-linenumber="4">
           
           
           <code class="ruby"></code>
         </li>
       
+        <li class="covered" data-hits="1" data-linenumber="5">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def initialize</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="6">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    @transactions = []</code>
+        </li>
+      
         <li class="never" data-hits="" data-linenumber="7">
           
           
-          <code class="ruby">  </code>
+          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="8">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="9">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def deposit(amount,account)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="10">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    account.credit(amount)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="11">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="12">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="13">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="14">
           
           
           <code class="ruby">end</code>
@@ -742,8 +778,8 @@
     <h3>spec/transaction_spec.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>5</b> relevant lines. 
-      <span class="green"><b>5</b> lines covered</span> and
+      <b>11</b> relevant lines. 
+      <span class="green"><b>11</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -772,28 +808,82 @@
         <li class="covered" data-hits="1" data-linenumber="4">
           <span class="hits">1</span>
           
-          <code class="ruby">  it &#39;should create a new instance of Transaction class&#39; do</code>
+          <code class="ruby">  subject(:transaction) { described_class.new }</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="5">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="5">
           
-          <code class="ruby">    transaction = Transaction.new</code>
+          
+          <code class="ruby"></code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="6">
           <span class="hits">1</span>
           
+          <code class="ruby">  it &#39;should create a new instance of Transaction class&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="7">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    transaction = Transaction.new</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="8">
+          <span class="hits">1</span>
+          
           <code class="ruby">    expect(transaction).to be_instance_of(Transaction)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="7">
+        <li class="never" data-hits="" data-linenumber="9">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="8">
+        <li class="never" data-hits="" data-linenumber="10">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="11">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  it &#39;should make a deposit&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="12">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    transaction = Transaction.new</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="13">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    expect(transaction).to respond_to(:deposit).with(2).arguments</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="14">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    account = Account.new</code>
+        </li>
+      
+        <li class="covered" data-hits="4" data-linenumber="15">
+          <span class="hits">4</span>
+          
+          <code class="ruby">    expect{ transaction.deposit(100, account) }.to change { account.show_balance }.by(100)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="16">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="17">
           
           
           <code class="ruby">end</code>

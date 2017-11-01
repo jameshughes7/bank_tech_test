@@ -35,16 +35,16 @@
       "/Users/jameshughes/MakersAcademy/Projects/Week9/bank_tech_test/lib/account.rb": [
         1,
         1,
-        4,
+        5,
         null,
         null,
         1,
-        3,
+        5,
         null,
         null,
         1,
-        1,
-        1,
+        2,
+        2,
         null,
         null,
         1,
@@ -92,13 +92,28 @@
         null,
         1,
         1,
+        null,
         1,
         1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        4,
         null,
         null
       ],
       "/Users/jameshughes/MakersAcademy/Projects/Week9/bank_tech_test/lib/transaction.rb": [
         1,
+        null,
+        1,
+        null,
+        1,
+        2,
+        null,
         null,
         1,
         1,
@@ -108,6 +123,6 @@
         null
       ]
     },
-    "timestamp": 1509382236
+    "timestamp": 1509533394
   }
 }
