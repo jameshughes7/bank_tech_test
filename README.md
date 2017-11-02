@@ -52,3 +52,4 @@ date || credit || debit || balance
 
 ## To test
 - RSpec
+- Rubocop
