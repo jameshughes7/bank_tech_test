@@ -1,9 +1,9 @@
 require 'bank_interface'
 
 describe BankInterface do
-  subject(:bank_interface) { BankInterface.new(transaction, statement) }
   let(:transaction) { double(:transaction) }
   let(:statement) { double(:statement) }
+  subject(:bank_interface) { BankInterface.new(transaction, statement) }
 
   describe '#initialize' do
     it 'should create a new instance of BankInterface' do
@@ -19,4 +19,17 @@ describe BankInterface do
     end
   end
 
+  describe '#interface interaction' do
+    it 'deposit' do
+      expect(bank_interface).to respond_to(:deposit).with(2).arguments
+    end
+
+    it 'withdrawal' do
+      expect(bank_interface).to respond_to(:withdrawal).with(2).arguments
+    end
+
+    it 'deposit' do
+      expect(bank_interface).to respond_to(:print).with(1).arguments
+    end
+  end
 end

@@ -20,8 +20,7 @@ describe Account do
     end
   end
 
-  describe "#account can receive data" do
-
+  describe '#account can receive data' do
     it 'should be able to receive a credit' do
       account = Account.new
       expect(account).to respond_to(:credit).with(1).argument
@@ -39,7 +38,7 @@ describe Account do
     it 'should be able to receive transaction_records' do
       account = Account.new
       expect(account).to respond_to(:receive_transactions).with(2).arguments
-      account.receive_transactions(100,nil)
+      account.receive_transactions(100, nil)
       expect(account.transaction_record).to(be_a(Hash))
       expect(account.transactions[0]).to eq(account.transaction_record)
     end
