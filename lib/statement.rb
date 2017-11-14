@@ -1,3 +1,5 @@
+require_relative 'account'
+
 class Statement
   attr_reader :headings
 
